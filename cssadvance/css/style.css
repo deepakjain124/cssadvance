@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #424242;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 270px;
+    min-width: 250px;
+    width: 470px;
+    background: linear-gradient(45deg, #0c0200, #2f3131);
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.box_content h1 {
+    color: goldenrod;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.box_content p {
+    color: rgb(209, 196, 223);
+    width: 200px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.box_content button {
+    background-color: goldenrod;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 5px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.box_content button:hover {
+    color: #0c0200;
+    background-color: #fff;
+}
+
+img {
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    transition: all 1.0s;
+}
+
+.box:hover img {
+    transform: translate(50%, -50%);
+    height: 400px;
+}
+
+.box:hover h1 {
+    font-size: 40px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.box:hover p,
+.box:hover button {
+    opacity: 1;
+}
